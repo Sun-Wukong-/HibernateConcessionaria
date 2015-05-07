@@ -32,4 +32,9 @@ public class ControleProduto {
         DaoProduto dao = new DaoProduto();
         dao.pesquisar(id);
     }
+    
+    public Produto recuperar(Long id){
+        DaoProduto dao = new DaoProduto();
+        return dao.recuperar(id);
+    }
 }
